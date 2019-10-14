@@ -1,1 +1,0 @@
-I think this task gave a good understanding to me as to how algorithms work in simple terms. By writing in a text file, the steps could be seen as to how the algorithm would work and the flowchart visually made these steps easy to be understood in a flowing sense, further improving on the understanding of algorithms.
