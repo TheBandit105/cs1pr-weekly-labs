@@ -1,0 +1,1 @@
+The algorithm works by the user inputing any natural number n that is greater but not equal to 1 in the input section. The output will display the list of numbers that don't exceed the selected n and if the remainder of these numbers, when dividing by 4, equals 0, then the algorithm will print these numbers.
