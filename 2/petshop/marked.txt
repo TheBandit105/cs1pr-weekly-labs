@@ -1,0 +1,12 @@
+./petshop1.sh: line 3: $: command not found
+Sorting petshop1.sh doesn't produce the required output
+./petshop2.sh: line 3: $: command not found
+Sorting petshop2.sh doesn't produce the required output
+./petshop3.sh: line 3: $: command not found
+Sorting petshop3.sh doesn't produce the required output
+Sorting petshop4.sh works!
+./petshop5.sh: line 3: $: command not found
+Sorting petshop5.sh doesn't produce the required output
+./petshop6.sh: line 3: $: command not found
+Sorting petshop6.sh doesn't produce the required output
+1/6 marks

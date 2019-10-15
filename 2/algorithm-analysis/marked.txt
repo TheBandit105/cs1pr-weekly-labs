@@ -1,0 +1,4 @@
+Checking algorithm.txt
+Requested more prose text
+output-n10.txt is missing
+0/3 marks

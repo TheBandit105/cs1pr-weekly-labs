@@ -1,0 +1,9 @@
+./fib.sh: line 18: 0,1,1,2,3,5,8,13,21,34,55: command not found
+ERR: 127
+ERR: 127
+ERR: 127
+ERR: 127
+
+0/4 marks
+fibonacci.odg created
+2/2 marks
