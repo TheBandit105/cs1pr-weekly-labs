@@ -1,0 +1,1 @@
+James' algorithmic thinking flowchart shows the process of making beans on toast. The steps he had created are really defined and can be understood by anyone who reads the algorithm. This algorithm can be carried out in practice. The algorithm terminates once the beans on toast had been made.  
