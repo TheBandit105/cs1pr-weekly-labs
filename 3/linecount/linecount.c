@@ -1,17 +1,16 @@
 #include <stdio.h>
 
-void main()
+int main()
 {
-    int lineCount = 13;
-    char c;
+    int lineCount = 0;
+    char c = getchar();
     
-    while (c = getchar != EOF){
+    while (c != EOF){
         if (c == '\n') {
-            lineCount ++; 
+            lineCount++; 
         }
+      c = getchar();
     }
-    
-    lineCount ++;
     
     printf("Line Counter: %d\n", lineCount);
 
