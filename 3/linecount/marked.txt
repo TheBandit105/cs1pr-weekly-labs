@@ -1,0 +1,8 @@
+The generated executable must be called linecount! -1 mark
+Test 0 OK
+Test 1 OK
+Test 2 OK
+Test 5 OK
+
+4/4 marks
+0/1 marks

@@ -1,0 +1,6 @@
+error1: OK
+error2: OK
+error3: OK
+error4: OK
+error5: OK
+4/4 marks

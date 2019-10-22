@@ -1,0 +1,4 @@
+Fixed1 is OK
+Fixed2 is OK
+Fixed3 is OK
+6/6 marks
