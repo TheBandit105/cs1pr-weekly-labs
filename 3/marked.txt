@@ -6,7 +6,7 @@ linecount/marked.txt:0/1 marks
 syntax-error-easy/marked.txt:4/4 marks
 syntax-error/marked.txt:6/6 marks
 tutorial/algorithmic-thinking/marked.txt:2/2 marks
-binary-calculator/marked.txt:12/12 marks
+\nHint: it is great that you work together, but don't copy from each other. I hope you learned something and are able to reproduce most of it! We may call you the next time to present and demonstrate.binary-calculator/marked.txt:12/12 marks
 binary-calculator/marked.txt:2/3 marks
 linecount/marked.txt:4/4 marks
 linecount/marked.txt:0/1 marks
