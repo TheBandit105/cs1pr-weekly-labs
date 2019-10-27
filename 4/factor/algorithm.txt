@@ -1,0 +1,19 @@
+let num be a positive natural number bigger than 0
+num = x 
+factor = n
+
+num = factor
+
+let static i = 2
+if i <= n
+  if n % i = 0
+  print i
+  n = n/i
+
+else
+
+  i++
+factor(n);
+
+return
+
