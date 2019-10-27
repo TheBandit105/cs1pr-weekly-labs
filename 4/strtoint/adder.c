@@ -4,10 +4,12 @@
 
 int main(int argc, char ** argv) {
 
-printf("Please type in two numbers to be added: ")
-scanf("%d", num1, num2)
+char * n2 = argv[2];
+char * n1 = argv[1];
+int s = 0;
 
-printf("%d\n", conversion (int num1 + int num2));
+sum = my_atoi(n1) + my_atoi(n2);
+printf("%d\n", s);
 
   return 0;
 }
