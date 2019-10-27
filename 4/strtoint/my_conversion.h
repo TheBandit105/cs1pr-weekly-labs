@@ -1,5 +1,5 @@
-#ifndef MY_CONVERSION_H
-#define MY_CONVERSION_H
+#ifndef MY_LIBRARY_H
+#define MY_LIBRARY_H
 
 int conversion(char * n);
 
