@@ -10,7 +10,7 @@ int main (int argc, char ** argv) // int main initialises the main subroutine al
 
   if(n > 0 & n < 11) // if loop tells the compiler to implement the function if whatever integer is typed in n falls between 0 and 10.
   {
-    goto loop // goto <name> tells the compiler to go to the function <name>.
+    goto loop; // goto <name> tells the compiler to go to the function <name>.
   }
 
   loop:
