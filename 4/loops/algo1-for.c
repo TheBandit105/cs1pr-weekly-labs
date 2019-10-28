@@ -1,5 +1,5 @@
-#include <stdio.h> // # include <stdio.h> tells the compiler to insert contents of stdio in this particular place.
-#include <stdlib.h> // # include <stdlib.h> tells the compiler to insert contents of stdlib in this particular place.
+#include <stdio.h> // # include <stdio.h> //tells the compiler to insert contents of stdio in this particular place.
+#include <stdlib.h> // # include <stdlib.h> //tells the compiler to insert contents of stdlib in this particular place.
 
 int main (int argc, char ** argv){  // This part of the program declares the main subroutine along the declaring the integer and character arguements so that the program can accept any numeric and letter variables in the program.
 int i; // int i tells the compiler that i is declared as an integer.
