@@ -8,7 +8,7 @@ int main()
 
   char str [15]; // Maximum character length of str.
   printf("Please input word(s) to determine if it is a palindrome: ");
-  scanf("%s", &str); // &str will produce a pointer to the entire str array.
+  scanf("%s", str); // &str will produce a pointer to the entire str array.
 
   x = 0, jstl = strlen(str) - 1; // When x = 0, jstl is calculated as the string length of string subtract 1.
   while(x < jstl)
