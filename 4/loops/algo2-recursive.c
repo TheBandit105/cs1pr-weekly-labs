@@ -23,13 +23,13 @@ void pldmcheck(char w[], int idx)
   {
     if (idx + 1 == lgth || idx == lgth)
     {
-      printf("The inputted word is a palindrome!");
+      printf("The inputted word is a palindrome!/n");
       return;
     }
    pldmcheck(w, idx + 1);
   }
   else
   {
-    printf("Sorry, the word you have inputted is not a palindrome!");
+    printf("Sorry, the word you have inputted is not a palindrome!/n");
   }
 }
