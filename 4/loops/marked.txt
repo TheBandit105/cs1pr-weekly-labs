@@ -1,4 +1,5 @@
 Found the correct construct!
+
 Building algo1-for.c 
 gcc -Wall algo1-for.c
 OK!
@@ -6,14 +7,16 @@ OK!
 < 55 5.0
 ---
 > Enter number for sumation and hence the mean: 55 5.0
-x  x != x 55 5.0 x
+Argument: 10 expected: 55 5.0
 Result is unexpected (1 marks)
 Found the correct construct!
+
 Building algo1-while.c 
 gcc -Wall algo1-while.c
 OK!
 Result OK
 Found the correct construct!
+
 Building algo1-goto.c 
 gcc -Wall algo1-goto.c
 algo1-goto.c: In function 'main':
@@ -22,6 +25,7 @@ algo1-goto.c:11:8: warning: suggest parentheses around comparison in operand of 
       ~~^~~
 OK!
 Result OK
+
 Building algo1-recursive.c 
 gcc -Wall algo1-recursive.c
 algo1-recursive.c: In function 'main':
@@ -33,9 +37,10 @@ OK!
 < 45 4.5
 ---
 > 0 4.5
-x  x != x 45 4.5 x
+Argument: 9 expected: 45 4.5
 Result is unexpected (2 marks)
 Found the correct construct!
+
 Building algo2-for.c 
 gcc -Wall algo2-for.c
 OK!
@@ -44,19 +49,21 @@ OK!
 ---
 > Please input word(s) to determine if it is a palindrome:  is a palindrome.
 \ No newline at end of file
-x  x != x no palindrome x
+Argument: pal expected: no palindrome
 Result is unexpected (1 marks)
 Found the correct construct!
+
 Building algo2-while.c 
 gcc -Wall algo2-while.c
 OK!
 1c1
-< palindrome
+< no palindrome
 ---
-> Please input word(s) to determine if it is a palindrome: öoÑñU is not palindrome
-x  x != x palindrome x
+> Please input word(s) to determine if it is a palindrome: ÆÒð€U is not palindrome
+Argument:  expected: no palindrome
 Result is unexpected (1 marks)
 Found the correct construct!
+
 Building algo2-goto.c 
 gcc -Wall algo2-goto.c
 algo2-goto.c: In function 'main':
@@ -67,6 +74,7 @@ algo2-goto.c:15:19: error: expected expression before '.' token
      pldrm = false;./
                    ^
 Error building the program (2 marks)
+
 Building algo2-recursive.c 
 gcc -Wall algo2-recursive.c
 OK!
@@ -75,6 +83,6 @@ OK!
 ---
 > Please input a word to determine if it is a palindrome: Sorry, the word you have inputted is not a palindrome!/n
 \ No newline at end of file
-x  x != x no palindrome x
+Argument: aweseswa expected: no palindrome
 Result is unexpected (2 marks)
 3/12 marks
