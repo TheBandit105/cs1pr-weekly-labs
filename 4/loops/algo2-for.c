@@ -9,7 +9,7 @@ int main() // Initialises the main subroutine.
   int num; // num is declared as an integer.
 
   printf("Please input word(s) to determine if it is a palindrome: ");
-  gets(t); // gets(t) is another way of saying scanf().
+  scanf("%s", t); //scanf().
 
   for (i = 0; t[i] != '\0'; i++) // All for statements runs until the conditions are met.
   {
