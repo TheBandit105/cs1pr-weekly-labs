@@ -1,0 +1,72 @@
+Found the correct construct!
+Building algo1-for.c 
+gcc -Wall algo1-for.c
+OK!
+Result is unexpected (1 marks)
+Found the correct construct!
+Building algo1-while.c 
+gcc -Wall algo1-while.c
+OK!
+Result OK
+Found the correct construct!
+Building algo1-goto.c 
+gcc -Wall algo1-goto.c
+algo1-goto.c: In function 'main':
+algo1-goto.c:11:8: warning: suggest parentheses around comparison in operand of '&' [-Wparentheses]
+   if(n > 0 & n < 11) // if loop tells the compiler to implement the function if whatever integer is typed in n falls between 0 and 10.
+      ~~^~~
+algo1-goto.c:14:3: error: expected ';' before '}' token
+   }
+   ^
+Error building the program (2 marks)
+Building algo1-recursive.c 
+gcc -Wall algo1-recursive.c
+algo1-recursive.c: In function 'main':
+algo1-recursive.c:13:9: warning: unused variable 'm' [-Wunused-variable]
+   float m = arg/2; // float m assigned as integer arg divided by 2.
+         ^
+OK!
+Result is unexpected (2 marks)
+Found the correct construct!
+Building algo2-for.c 
+gcc -Wall algo2-for.c
+algo2-for.c: In function 'main':
+algo2-for.c:12:3: warning: implicit declaration of function 'gets'; did you mean 'fgets'? [-Wimplicit-function-declaration]
+   gets(t); // gets(t) is another way of saying scanf().
+   ^~~~
+   fgets
+/tmp/cc5e5L1t.o: In function `main':
+algo2-for.c:(.text+0x3c): warning: the `gets' function is dangerous and should not be used.
+OK!
+Result is unexpected (1 marks)
+Found the correct construct!
+Building algo2-while.c 
+gcc -Wall algo2-while.c
+algo2-while.c: In function 'main':
+algo2-while.c:11:11: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'char (*)[15]' [-Wformat=]
+   scanf("%s", &str); // &str will produce a pointer to the entire str array.
+          ~^   ~~~~
+OK!
+Result is unexpected (1 marks)
+Found the correct construct!
+Building algo2-goto.c 
+gcc -Wall algo2-goto.c
+algo2-goto.c: In function 'main':
+algo2-goto.c:13:11: warning: statement with no effect [-Wunused-value]
+   (str[i] != str[n-i-1]) // Determines if string array of i is not equal to the string array of strlen(str) - i - 1.
+   ~~~~~~~~^~~~~~~~~~~~~~
+algo2-goto.c:14:3: error: expected ';' before '{' token
+   {
+   ^
+algo2-goto.c:12:3: warning: label 'loop' defined but not used [-Wunused-label]
+   loop: ;
+   ^~~~
+algo2-goto.c:8:8: warning: unused variable 'pldrm' [-Wunused-variable]
+   bool pldrm = true; // The boolean variable pldrm is declared as true.
+        ^~~~~
+Error building the program (2 marks)
+Building algo2-recursive.c 
+gcc -Wall algo2-recursive.c
+OK!
+Result is unexpected (2 marks)
+1/12 marks

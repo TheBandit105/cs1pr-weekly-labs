@@ -1,0 +1,7 @@
+Trying to build gcd.c 
+gcc -Wall gcd.c my_gcd_lib.c -I.
+Result is unexpected!
+Trying to use gcd()
+gcc: error: test/driver.c: No such file or directory
+Result is unexpected!
+0/2 marks

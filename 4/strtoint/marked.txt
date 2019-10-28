@@ -1,0 +1,11 @@
+Trying to build adder: 
+gcc -Wall adder.c my_conversion.c
+adder.c:2:10: fatal error: my_coversion.h: No such file or directory
+ #include "my_coversion.h"
+          ^~~~~~~~~~~~~~~~
+compilation terminated.
+my_conversion.c:1:10: fatal error: my_conversion.h: No such file or directory
+ #include <my_conversion.h>
+          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+Couldn't compile adder! (8 marks!) Make sure your program compiles.

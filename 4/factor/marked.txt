@@ -1,0 +1,11 @@
+Trying to build factor: 
+gcc -Wall factor.c my_math.c
+factor.c:2:9: fatal error: conio.h: No such file or directory
+ #include<conio.h>
+         ^~~~~~~~~
+compilation terminated.
+my_math.c:1:10: fatal error: my_math.h: No such file or directory
+ #include <my_math.h>
+          ^~~~~~~~~~~
+compilation terminated.
+Couldn't compile factor! (10 marks!) Make sure your program compiles.
