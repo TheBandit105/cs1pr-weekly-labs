@@ -1,7 +1,10 @@
 Trying to build gcd.c 
 gcc -Wall gcd.c my_gcd_lib.c -I.
+1c1
+< 10
+---
+> the gcd is: 8
 Result is unexpected!
 Trying to use gcd()
-gcc: error: test/driver.c: No such file or directory
-Result is unexpected!
-0/2 marks
+Result OK
+1/2 marks

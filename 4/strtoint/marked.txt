@@ -4,8 +4,15 @@ adder.c:2:10: fatal error: my_coversion.h: No such file or directory
  #include "my_coversion.h"
           ^~~~~~~~~~~~~~~~
 compilation terminated.
-my_conversion.c:1:10: fatal error: my_conversion.h: No such file or directory
- #include <my_conversion.h>
-          ^~~~~~~~~~~~~~~~~
-compilation terminated.
+my_conversion.c: In function 'conversion':
+my_conversion.c:12:32: error: 'i' undeclared (first use in this function)
+            num = 10 * num + (n[i] - '0');
+                                ^
+my_conversion.c:12:32: note: each undeclared identifier is reported only once for each function it appears in
+my_conversion.c:15:12: warning: return makes integer from pointer without a cast [-Wint-conversion]
+     return n;
+            ^
+my_conversion.c:22:8: warning: return makes integer from pointer without a cast [-Wint-conversion]
+ return n;
+        ^
 Couldn't compile adder! (8 marks!) Make sure your program compiles.
