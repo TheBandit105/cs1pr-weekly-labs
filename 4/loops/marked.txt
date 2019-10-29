@@ -59,7 +59,7 @@ OK!
 1c1
 < no palindrome
 ---
-> Please input word(s) to determine if it is a palindrome: ÆÒð€U is not palindrome
+> Please input word(s) to determine if it is a palindrome: v}U is not palindrome
 Argument:  expected: no palindrome
 Result is unexpected (1 marks)
 Found the correct construct!

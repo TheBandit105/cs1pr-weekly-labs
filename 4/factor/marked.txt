@@ -9,4 +9,12 @@ my_math.c:6:21: error: 'num' undeclared (first use in this function)
    if (n % 2 == 0 && num > 2) return 0;
                      ^~~
 my_math.c:6:21: note: each undeclared identifier is reported only once for each function it appears in
+
+Trying alternative to compile
+gcc -Wall factor.c
+factor.c:2:9: fatal error: conio.h: No such file or directory
+ #include<conio.h>
+         ^~~~~~~~~
+compilation terminated.
 Couldn't compile factor! (10 marks!) Make sure your program compiles.
+0/10 marks

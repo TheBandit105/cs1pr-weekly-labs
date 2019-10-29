@@ -1,23 +1,9 @@
-Couldn't run ./strtoint/run-marking.sh on /media/strtoint
-Couldn't run ./factor/run-marking.sh on /media/factor
 at015244,4
-factor/marked.txt:Couldn't compile factor! (10 marks!) Make sure your program compiles.
-loops/marked.txt:Result is unexpected (1 marks)
-loops/marked.txt:Result is unexpected (2 marks)
-loops/marked.txt:Result is unexpected (1 marks)
-loops/marked.txt:Result is unexpected (1 marks)
-loops/marked.txt:Error building the program (2 marks)
-loops/marked.txt:Result is unexpected (2 marks)
+factor/marked.txt:0/10 marks
 loops/marked.txt:3/12 marks
-strtoint/marked.txt:Couldn't compile adder! (8 marks!) Make sure your program compiles.
+strtoint/marked.txt:0/8 marks
 tutorial-gcd/marked.txt:1/2 marks
-factor/marked.txt:Couldn't compile factor! (10 marks!) Make sure your program compiles.
-loops/marked.txt:Result is unexpected (1 marks)
-loops/marked.txt:Result is unexpected (2 marks)
-loops/marked.txt:Result is unexpected (1 marks)
-loops/marked.txt:Result is unexpected (1 marks)
-loops/marked.txt:Error building the program (2 marks)
-loops/marked.txt:Result is unexpected (2 marks)
+factor/marked.txt:0/10 marks
 loops/marked.txt:3/12 marks
-strtoint/marked.txt:Couldn't compile adder! (8 marks!) Make sure your program compiles.
+strtoint/marked.txt:0/8 marks
 tutorial-gcd/marked.txt:1/2 marks

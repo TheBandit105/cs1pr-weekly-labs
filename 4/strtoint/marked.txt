@@ -15,4 +15,12 @@ my_conversion.c:15:12: warning: return makes integer from pointer without a cast
 my_conversion.c:22:8: warning: return makes integer from pointer without a cast [-Wint-conversion]
  return n;
         ^
+
+Trying alternative to compile
+gcc -Wall adder.c
+adder.c:2:10: fatal error: my_coversion.h: No such file or directory
+ #include "my_coversion.h"
+          ^~~~~~~~~~~~~~~~
+compilation terminated.
 Couldn't compile adder! (8 marks!) Make sure your program compiles.
+0/8 marks
