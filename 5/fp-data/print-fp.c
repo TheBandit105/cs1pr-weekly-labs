@@ -49,18 +49,17 @@ void printIEEE(myfloat var)
 }
 
 // Driver Code
-int main(int argc, char ** argv)
+int main()
 {
 
     // Instantiate the union
     myfloat var;
 
     // Get the real value
-    printf("Please input a decimal number to convert to a 32 bit binary value (IEEE 754 Floating-Point representation): ");
-    scanf("%f", &var.flo);
+  
+    var.flo = 0.15625;
 
     // Get the IEEE floating point representation
-    printf("The 32 bit (IEEE 754) representation of %f is : \n", var.flo);
     printIEEE(var);
 
     return 0;
