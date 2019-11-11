@@ -1,4 +1,5 @@
 #include <stdio.h>  // A statement that tells the compiler to put in the contents of the header file stdio.h, which is for standard input and output.
+#include <stdlib.h>
 
 void printBin(int num, int bit) // This indicates void printBin as a function parameter with int as an argument type, meaning the output of this function parameter will always be an integer, despite that no values are passed into this function.
 {
@@ -17,7 +18,7 @@ void printBin(int num, int bit) // This indicates void printBin as a function pa
 
 typedef union { // typedef union creates an aliase for union, which is a special data type that permits different data types to be stored in the same memory location.
 
-    float flo;
+    float f;
     struct
     {
 
@@ -49,16 +50,12 @@ void printIEEE(myfloat var)
     printf("\n");
 }
 
-// This is the main subroutine where all the outputs of the void subroutines are passed into.
-int main()
+int main(int argc, char*argv[])
 {
-    // Instantiate the union
+
     myfloat var;
+    var.f = atof(argv[1]);
 
-    // Asks user to input a decimal number to obtain the IEEE 754 representation.
-
-    printf("Please input a decimal number to convert to a 32 bit binary value: ");
-    scanf("%f", &var.flo);
 
     // The IEEE floating point representation from the var variable will be printed as soon as the code runs.
     printIEEE(var);
