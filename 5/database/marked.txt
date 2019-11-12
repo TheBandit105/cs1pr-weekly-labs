@@ -1,0 +1,2 @@
+compile.sh: A bashscript must start with: #!/bin/bash
+0/12 marks
