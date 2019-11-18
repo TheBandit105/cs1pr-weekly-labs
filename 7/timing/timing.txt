@@ -1,0 +1,9 @@
+n, for loop, recursive, strcmp
+
+1, 1000, 1000, 1200
+10, 800, 1000, 800
+100, 1600, 2400, 1000
+1000, 7600, 22400, 800
+10000, 69600, 228200, 1600
+
+For the 'for' loop between the iterations 1 - 10000, the time taken for the calculation decreased between 1 and 10 iterations, then steadily increased between 100 - 10000 iterations. In recursive, the time taken for the calculation initially stayed at 1000 ns between 1 and 10 iterations, but then rapidly increased between 100 - 10000 iterations. Finally, for the string comparison, the time taken for the strcmp function to be executed fluctuates between 1 - 10000 iterations.
