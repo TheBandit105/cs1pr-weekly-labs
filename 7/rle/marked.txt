@@ -1,0 +1,45 @@
+Trying to build rle.c: 
+gcc -Wall rle.c
+OK!
+Test 1 OK
+Test 2 OK
+Test 3 ERR: data doesn't match.
+Arguments: D HH
+>>> Got >>>>>>>>
+HHHHHHHHHHHHHHHHHHHHHHHHH
+<<<<<<<<<<<<<<<<
+
+>>> Expected >>>
+Error: Invalid input
+<<<<<<<<<<<<<<<<
+Test 4 OK
+Test 5 ERR: data doesn't match.
+Arguments: E DDDDDDDDCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCOODDDDDDEEEEE
+>>> Got >>>>>>>>
+D7C90O1D5E4 
+<<<<<<<<<<<<<<<<
+
+>>> Expected >>>
+D7C9C9C9C9C9C9C9C9C9C0O1D5E4
+<<<<<<<<<<<<<<<<
+Test 6 OK
+Test 7 ERR: data doesn't match.
+Arguments: E AZZazzAAAAZAPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+>>> Got >>>>>>>>
+A0Z1a0z1A3Z0A0P35 
+<<<<<<<<<<<<<<<<
+
+>>> Expected >>>
+A0Z1a0z1A3Z0A0P9P9P9P5
+<<<<<<<<<<<<<<<<
+Test 8 ERR: data doesn't match.
+Arguments: Z
+>>> Got >>>>>>>>
+Sorry but that was an invalid input, please try again! 
+<<<<<<<<<<<<<<<<
+
+>>> Expected >>>
+Error: Invalid input
+<<<<<<<<<<<<<<<<
+
+4/8 marks

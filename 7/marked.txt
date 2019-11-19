@@ -1,3 +1,7 @@
-at015244,0 marks
+at015244,13 marks
+lemmings/marked.txt:0/6 marks
+rle/marked.txt:4/8 marks
 str/marked.txt:0/1 marks
-timing/marked.txt:0/12 marks
+str/marked.txt:0/9 marks
+timing/marked.txt:9/12 marks
+tutorial-pointers/marked.txt:0/3 marks

@@ -1,4 +1,12 @@
-timing.pdf is missing
+timing.pdf is provided
 Checking timing.txt
-File doesn't exist
-0/12 marks
+Enough text provided
+Trying to build code.c: 
+gcc -Wall code.c
+OK!
+First row does not match the expectations!
+Output seems to be OK
+The head does not match the expectation from the sheet!
+First row does not match the expectations!
+Output seems to be OK
+9/12 marks

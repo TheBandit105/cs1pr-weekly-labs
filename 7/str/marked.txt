@@ -1,2 +1,44 @@
-Missing test.c
+Trying to build test.c with your library: 
+gcc -Wall test.c cstrlib.c -I.
+/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':
+(.text+0x20): undefined reference to `main'
+collect2: error: ld returned 1 exit status
+Error, couldn't build test
 0/1 marks
+Linking library to your code
+gcc -Wall /mnt/7/./str/test/testcases.c cstrlib.c -I.
+/mnt/7/./str/test/testcases.c: In function 'main':
+/mnt/7/./str/test/testcases.c:12:3: error: unknown type name 'str_t'; did you mean 'struct'?
+   str_t str1;
+   ^~~~~
+   struct
+/mnt/7/./str/test/testcases.c:13:3: error: unknown type name 'str_t'; did you mean 'struct'?
+   str_t str2;
+   ^~~~~
+   struct
+/mnt/7/./str/test/testcases.c:14:3: error: unknown type name 'str_t'; did you mean 'struct'?
+   str_t str3;
+   ^~~~~
+   struct
+/mnt/7/./str/test/testcases.c:16:3: warning: implicit declaration of function 'str_init'; did you mean 'strsignal'? [-Wimplicit-function-declaration]
+   str_init("testfile", & str1);
+   ^~~~~~~~
+   strsignal
+/mnt/7/./str/test/testcases.c:19:6: warning: implicit declaration of function 'str_len'; did you mean 'strnlen'? [-Wimplicit-function-declaration]
+   if(str_len(& str1) == strlen("testfile")){
+      ^~~~~~~
+      strnlen
+/mnt/7/./str/test/testcases.c:26:6: warning: implicit declaration of function 'str_hash'; did you mean 'strchr'? [-Wimplicit-function-declaration]
+   if(str_hash(& str1) != str_hash(& str2) && str_hash(& str1) != 0){
+      ^~~~~~~~
+      strchr
+/mnt/7/./str/test/testcases.c:37:8: warning: implicit declaration of function 'str_equal'; did you mean 'strsignal'? [-Wimplicit-function-declaration]
+   if(! str_equal(& str1, & str2) && str_equal(& str1, & str3)){
+        ^~~~~~~~~
+        strsignal
+/mnt/7/./str/test/testcases.c:44:6: warning: implicit declaration of function 'str_cmp'; did you mean 'strncmp'? [-Wimplicit-function-declaration]
+   if(str_cmp(& str1, & str2) == 1 && str_cmp(& str2, & str1) == -1){
+      ^~~~~~~
+      strncmp
+Error, couldn't link library
+0/9 marks
