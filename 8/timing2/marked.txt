@@ -1,0 +1,4 @@
+timing.pdf is missing (-1 mark)
+Checking timing.txt
+File doesn't exist (-1 marks)
+0/10 marks
