@@ -13,3 +13,6 @@ For the callbyvalue function, the time starts low at 0 ns between 1 to 10 iterat
 but then suddenly jumps to 21000 ns between 100 - 10000 iterations.
 Finally, the callbyreference times begin with 0 ns between 1 - 100 iterations, 
 but then jumps to 22000 ns between 1000 and 10000 iterations. 
+
+
+Note: ns stands for nanoseconds.
