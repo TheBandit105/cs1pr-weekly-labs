@@ -1,0 +1,15 @@
+n, malloc, free, callbyvalue, callbyreference
+1, 1000, 1000, 0, 0
+10, 1000, 0, 0, 0
+100, 1000, 1000, 0, 0
+1000, 2000, 1000, 3000, 3000
+10000, 36000, 1000, 21000, 22000
+
+For the malloc function, the time stays constant at 1000 ns between 1 - 100 iterations, 
+but then rapidly increases to 36000 from 1000 iterations to 10000 iterations.
+The free function shows a constant time of 1000 ns between 1 and 10000 iterations,
+except for the anomaly of 0 ns at 10 iterations.
+For the callbyvalue function, the time starts low at 0 ns between 1 to 10 iterations,
+but then suddenly jumps to 21000 ns between 100 - 10000 iterations.
+Finally, the callbyreference times begin with 0 ns between 1 - 100 iterations, 
+but then jumps to 22000 ns between 1000 and 10000 iterations. 
