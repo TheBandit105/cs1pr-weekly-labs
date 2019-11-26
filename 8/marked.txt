@@ -1,4 +1,8 @@
-at015244,4 marks
+at015244,22 marks
 complexity/marked.txt:4/4 marks
 lookup/marked.txt:0/1 marks
-timing2/marked.txt:0/10 marks
+lookup/marked.txt:0/5 marks
+qsort/marked.txt:8/8 marks
+qsort/marked.txt:0/2 marks
+timing2/marked.txt:10/10 marks
+tutorial-review/marked.txt:0/2 marks

@@ -1,2 +1,41 @@
-Missing test.c
+Trying to build test.c with your library: 
+gcc -Wall test.c table.c -I.
+/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':
+(.text+0x20): undefined reference to `main'
+collect2: error: ld returned 1 exit status
+Error, couldn't build test
 0/1 marks
+Linking library to your code
+gcc -Wall /mnt/8/./lookup/test/testcases.c table.c -I.
+/mnt/8/./lookup/test/testcases.c: In function 'main':
+/mnt/8/./lookup/test/testcases.c:9:3: error: unknown type name 'lookupTbl_t'
+   lookupTbl_t x;
+   ^~~~~~~~~~~
+/mnt/8/./lookup/test/testcases.c:10:3: warning: implicit declaration of function 'tbl_init' [-Wimplicit-function-declaration]
+   tbl_init(& x);
+   ^~~~~~~~
+/mnt/8/./lookup/test/testcases.c:16:20: warning: implicit declaration of function 'tbl_get'; did you mean '_IO_getc'? [-Wimplicit-function-declaration]
+       void * val = tbl_get(&x, i, j);
+                    ^~~~~~~
+                    _IO_getc
+/mnt/8/./lookup/test/testcases.c:16:20: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+/mnt/8/./lookup/test/testcases.c:28:5: warning: implicit declaration of function 'tbl_set' [-Wimplicit-function-declaration]
+     tbl_set(&x, 1, 1, (void*) 4711);
+     ^~~~~~~
+/mnt/8/./lookup/test/testcases.c:29:18: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+     void * val = tbl_get(&x, 1, 1);
+                  ^~~~~~~
+/mnt/8/./lookup/test/testcases.c:41:25: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+       tbl_set(&x, i, j, (void*) (i+j));
+                         ^
+/mnt/8/./lookup/test/testcases.c:42:20: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+       void * val = tbl_get(&x, i, j);
+                    ^~~~~~~
+/mnt/8/./lookup/test/testcases.c:43:17: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+       if(val != (void*) (i+j)) correct = false;
+                 ^
+/mnt/8/./lookup/test/testcases.c:53:3: warning: implicit declaration of function 'print_matrix' [-Wimplicit-function-declaration]
+   print_matrix(& x);
+   ^~~~~~~~~~~~
+Error, couldn't link library
+0/5 marks

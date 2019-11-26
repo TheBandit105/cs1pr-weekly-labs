@@ -1,4 +1,15 @@
-timing.pdf is missing (-1 mark)
 Checking timing.txt
-File doesn't exist (-1 marks)
-0/10 marks
+Enough text provided
+Trying to build perf2.c: 
+gcc -Wall perf2.c
+perf2.c: In function 'callByReference':
+perf2.c:28:5: warning: value computed is not used [-Wunused-value]
+     *n++;
+     ^~~~
+OK!
+First row seems to be OK!
+Output seems to be OK
+Head OK!
+First row seems to be OK!
+Output seems to be OK
+10/10 marks

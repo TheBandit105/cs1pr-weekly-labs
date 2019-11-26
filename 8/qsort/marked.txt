@@ -1,0 +1,25 @@
+Trying to build main.c: 
+gcc -Wall main.c qsort.c -I.
+OK!
+Test 1 OK
+Test 2 OK
+Test 3 ERR: 123 returned by program did you use 'int main' as prototype and return 0 from main?
+OK
+Test 4 OK
+Test 5 OK
+Test 6 OK
+Test 7 OK
+Test 8 OK
+
+8/8 marks
+Trying to build qsort.c with the prescribed API
+gcc -Wall /mnt/8/./qsort/test/main.c qsort.c -I.
+/mnt/8/./qsort/test/main.c: In function 'main':
+/mnt/8/./qsort/test/main.c:5:3: warning: implicit declaration of function 'mqsort' [-Wimplicit-function-declaration]
+   mqsort(array, 3);
+   ^~~~~~
+/tmp/ccQfUk9n.o: In function `main':
+main.c:(.text+0x3e): undefined reference to `mqsort'
+collect2: error: ld returned 1 exit status
+Error, couldn't build using the API
+0/2 marks
