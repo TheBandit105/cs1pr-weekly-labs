@@ -1,0 +1,19 @@
+Trying to build matrix.c with the prescribed API
+gcc -Wall -g3 /mnt/9/./sparse/test/main.c matrix.c -I.
+OK!
+Initialize matrix with 10x10
+Setting a random location to a value
+Updating previous value
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 4711 0 0 0 4700 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+6/6 marks
+Testing a 1000x1000 matrix
+4/4 marks

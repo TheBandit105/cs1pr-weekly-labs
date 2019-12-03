@@ -1,0 +1,16 @@
+graph.pdf is missing (-1 mark)
+Trying to build naive.c as you defined it!
+gcc: error: |: No such file or directory
+gcc: error: ./binary: No such file or directory
+gcc: error: 10: No such file or directory
+gcc: error: 1000: No such file or directory
+gcc: error: 100: No such file or directory
+Error, couldn't build, that will likely lead to 0 marks! Check it again!
+Trying to build binary.c as you defined it!
+gcc: error: |: No such file or directory
+gcc: error: ./binary: No such file or directory
+gcc: error: 10: No such file or directory
+gcc: error: 1000: No such file or directory
+gcc: error: 100: No such file or directory
+Error, couldn't build
+1/10 marks

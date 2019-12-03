@@ -1,0 +1,95 @@
+Trying to build matrix.c with the prescribed API
+gcc -Wall -g3 /mnt/9/./matrix/test/main.c matrix.c -I.
+/mnt/9/./matrix/test/main.c: In function 'main':
+/mnt/9/./matrix/test/main.c:9:3: error: unknown type name 'matrix_t'
+   matrix_t * m = matrix_init(100, 100);
+   ^~~~~~~~
+/mnt/9/./matrix/test/main.c:9:18: warning: implicit declaration of function 'matrix_init' [-Wimplicit-function-declaration]
+   matrix_t * m = matrix_init(100, 100);
+                  ^~~~~~~~~~~
+/mnt/9/./matrix/test/main.c:9:18: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+/mnt/9/./matrix/test/main.c:13:7: warning: implicit declaration of function 'matrix_set' [-Wimplicit-function-declaration]
+       matrix_set(m, i, j, i+j);
+       ^~~~~~~~~~
+/mnt/9/./matrix/test/main.c:20:7: error: unknown type name 'int64_t'; did you mean '__int64_t'?
+       int64_t val = matrix_get(m, i, j);
+       ^~~~~~~
+       __int64_t
+/mnt/9/./matrix/test/main.c:20:21: warning: implicit declaration of function 'matrix_get' [-Wimplicit-function-declaration]
+       int64_t val = matrix_get(m, i, j);
+                     ^~~~~~~~~~
+/mnt/9/./matrix/test/main.c:35:3: warning: implicit declaration of function 'matrix_save' [-Wimplicit-function-declaration]
+   matrix_save(m, "matrix1.bin");
+   ^~~~~~~~~~~
+/mnt/9/./matrix/test/main.c:36:3: warning: implicit declaration of function 'matrix_free' [-Wimplicit-function-declaration]
+   matrix_free(m);
+   ^~~~~~~~~~~
+/mnt/9/./matrix/test/main.c:39:5: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+   m = matrix_init(2, 2);
+     ^
+/mnt/9/./matrix/test/main.c:43:7: error: unknown type name 'int64_t'; did you mean '__int64_t'?
+       int64_t val = matrix_get(m, i, j);
+       ^~~~~~~
+       __int64_t
+/mnt/9/./matrix/test/main.c:58:3: error: unknown type name 'matrix_t'
+   matrix_t * m2 = matrix_load("matrix1.bin");
+   ^~~~~~~~
+/mnt/9/./matrix/test/main.c:58:19: warning: implicit declaration of function 'matrix_load'; did you mean '__atomic_load'? [-Wimplicit-function-declaration]
+   matrix_t * m2 = matrix_load("matrix1.bin");
+                   ^~~~~~~~~~~
+                   __atomic_load
+/mnt/9/./matrix/test/main.c:58:19: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+/mnt/9/./matrix/test/main.c:62:7: error: unknown type name 'int64_t'; did you mean '__int64_t'?
+       int64_t val = matrix_get(m2, i, j);
+       ^~~~~~~
+       __int64_t
+/mnt/9/./matrix/test/main.c:77:5: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+   m = matrix_init(2, 2);
+     ^
+/mnt/9/./matrix/test/main.c:81:7: error: unknown type name 'int64_t'; did you mean '__int64_t'?
+       int64_t val = matrix_get(m, i, j);
+       ^~~~~~~
+       __int64_t
+/mnt/9/./matrix/test/main.c:92:3: error: unknown type name 'matrix_t'
+   matrix_t * m3 = matrix_mult_scalar(m, 2);
+   ^~~~~~~~
+/mnt/9/./matrix/test/main.c:92:19: warning: implicit declaration of function 'matrix_mult_scalar' [-Wimplicit-function-declaration]
+   matrix_t * m3 = matrix_mult_scalar(m, 2);
+                   ^~~~~~~~~~~~~~~~~~
+/mnt/9/./matrix/test/main.c:92:19: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+/mnt/9/./matrix/test/main.c:95:7: error: unknown type name 'int64_t'; did you mean '__int64_t'?
+       int64_t val = matrix_get(m3, i, j);
+       ^~~~~~~
+       __int64_t
+/mnt/9/./matrix/test/main.c:109:8: warning: implicit declaration of function 'matrix_add_scalar' [-Wimplicit-function-declaration]
+   m3 = matrix_add_scalar(m, 2);
+        ^~~~~~~~~~~~~~~~~
+/mnt/9/./matrix/test/main.c:109:6: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+   m3 = matrix_add_scalar(m, 2);
+      ^
+/mnt/9/./matrix/test/main.c:112:7: error: unknown type name 'int64_t'; did you mean '__int64_t'?
+       int64_t val = matrix_get(m3, i, j);
+       ^~~~~~~
+       __int64_t
+/mnt/9/./matrix/test/main.c:127:8: warning: implicit declaration of function 'matrix_add' [-Wimplicit-function-declaration]
+   m3 = matrix_add(m, m3);
+        ^~~~~~~~~~
+/mnt/9/./matrix/test/main.c:127:6: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+   m3 = matrix_add(m, m3);
+      ^
+/mnt/9/./matrix/test/main.c:130:7: error: unknown type name 'int64_t'; did you mean '__int64_t'?
+       int64_t val = matrix_get(m3, i, j);
+       ^~~~~~~
+       __int64_t
+/mnt/9/./matrix/test/main.c:145:8: warning: implicit declaration of function 'matrix_mul' [-Wimplicit-function-declaration]
+   m3 = matrix_mul(m, m);
+        ^~~~~~~~~~
+/mnt/9/./matrix/test/main.c:145:6: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+   m3 = matrix_mul(m, m);
+      ^
+/mnt/9/./matrix/test/main.c:153:7: error: unknown type name 'int64_t'; did you mean '__int64_t'?
+       int64_t val = matrix_get(m3, i, j);
+       ^~~~~~~
+       __int64_t
+Error, couldn't build using the API
+0/10 marks
