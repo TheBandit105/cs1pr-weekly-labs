@@ -1,0 +1,61 @@
+Trying to build with the prescribed API
+gcc -Wall -g3 /mnt/10/./btree/test/main.c btree.c -I.
+btree.c:10:3: error: conflicting types for 'btree_t'
+ } btree_t;
+   ^~~~~~~
+In file included from btree.c:2:0:
+./btree.h:12:3: note: previous declaration of 'btree_t' was here
+ } btree_t;
+   ^~~~~~~
+btree.c:12:11: error: conflicting types for 'btree_init'
+ btree_t * btree_init(){
+           ^~~~~~~~~~
+In file included from btree.c:2:0:
+./btree.h:15:11: note: previous declaration of 'btree_init' was here
+ btree_t * btree_init();
+           ^~~~~~~~~~
+btree.c:20:5: error: conflicting types for 'btree_insert'
+ int btree_insert(btree_t * tree, double value){
+     ^~~~~~~~~~~~
+In file included from btree.c:2:0:
+./btree.h:24:5: note: previous declaration of 'btree_insert' was here
+ int btree_insert(btree_t * tree, double value);
+     ^~~~~~~~~~~~
+btree.c: In function 'btree_insert':
+btree.c:21:12: error: 't' undeclared (first use in this function)
+   int id = t->lastID;
+            ^
+btree.c:21:12: note: each undeclared identifier is reported only once for each function it appears in
+btree.c: At top level:
+btree.c:30:8: error: conflicting types for 'btree_remove'
+ double btree_remove(btree_t * tree, int id){
+        ^~~~~~~~~~~~
+In file included from btree.c:2:0:
+./btree.h:30:8: note: previous declaration of 'btree_remove' was here
+ double btree_remove(btree_t * tree, int id);
+        ^~~~~~~~~~~~
+btree.c: In function 'btree_remove':
+btree.c:31:22: error: 't' undeclared (first use in this function)
+   for(int i = 0; i < t->size; i++){
+                      ^
+btree.c: At top level:
+btree.c:42:5: error: conflicting types for 'btree_size'
+ int btree_size(btree_t * tree){
+     ^~~~~~~~~~
+In file included from btree.c:2:0:
+./btree.h:36:5: note: previous declaration of 'btree_size' was here
+ int btree_size(btree_t * tree);
+     ^~~~~~~~~~
+btree.c:50:6: error: conflicting types for 'btree_traverse_preorder'
+ void btree_traverse_preorder(btree_t * tree, void (*traversefunc)(int id, double value)){
+      ^~~~~~~~~~~~~~~~~~~~~~~
+In file included from btree.c:2:0:
+./btree.h:39:6: note: previous declaration of 'btree_traverse_preorder' was here
+ void btree_traverse_preorder(btree_t * tree, void (*traversefunc)(int id, double value));
+      ^~~~~~~~~~~~~~~~~~~~~~~
+btree.c: In function 'btree_traverse_preorder':
+btree.c:51:22: error: 't' undeclared (first use in this function)
+   for(int i = 0; i < t->size; i++){
+                      ^
+Error, couldn't build using the API
+0/18 marks
