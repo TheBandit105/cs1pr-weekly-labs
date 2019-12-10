@@ -20,7 +20,8 @@ list_t * list_init(void * value){
   return host;
 }
 
-void list_free(list_t * lst){
+void list_free(list_t * lst, void (*freefunc)(void*)){
+  // This function isn't working as intended. Check what it really does.
   if(lst->prev!=NULL){
     for(list_t * cur = lst->prev;cur!=NULL;cur=cur->next){
      free(cur);

@@ -11,7 +11,7 @@ list_t * list_init(void * value);
 /*
  * Free the list element and all connected list elements
  */
-void list_free(list_t * lst);
+void list_free(list_t * lst, void (*freefunc)(void*));
 
 /* Link a new list element with the specified value right of the lst
  * @Return the new list element that stores the value
